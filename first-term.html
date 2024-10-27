@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفصل الدراسي الأول</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-chapters.css">
+</head>
+</head>
+<body>
+    <!-- Header Section -->
+      <header>
+        <div class="header-container">
+            <!-- شعار دائري واسم المنظمة -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.jpg" alt="ElFar Logo" class="logo-img">
+                </a>
+                <div class="logo-text">منصة الفار</div>
+            </div>
+
+            <!-- قائمة التنقل الرئيسية -->
+            <nav class="main-nav">
+                <ul class="navbar">
+                    <li><a href="challenges.html" class="nav-button">التحديات</a></li>
+                    <li><a href="students.html" class="nav-button">المتفوقين</a></li>
+                </ul>
+            </nav>
+            
+            <!-- أيقونة قائمة الهامبرغر -->
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- قائمة الهامبرغر المخفية -->
+            <nav class="hamburger-nav">
+                <ul class="hamburger-navbar">
+                    <li><a href="about-mnsa.html">عن المنصة</a></li>
+                    <li><a href="contact.htmk">تواصل معنا</a></li>
+                    <li><a href="pay.html">خطة الاشتراك</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="study-section">
+        <h1 class="section-title">الفصل الدراسي الأول</h1>
+        <p class="section-description">اسم المقرر: استدامة الحياة في النظم البيئية من منظور التكامل العلمي</p>
+        <div class="separator"></div>
+
+        <div class="chapter">
+            <h2 class="study-title">الفصل الأول: النظام البيئي المائي</h2>
+            <img src="image1.jpg" alt="النظام البيئي المائي" class="image-thumbnail"> <!-- صورة الفصل -->
+            <span class="triangle" onclick="toggleDetails('eco-system-details')"></span>
+            <a href="chapter1.html" class="study-button">أبدا التحدي</a>
+            <div id="eco-system-details" class="details">
+                <p class="study-description">تفاصيل الفصل:</p>
+                <ul>
+                    <li>الدرس الأول: مقدمة.</li>
+                    <li>الدرس الثاني: العوامل الكيميائية.</li>
+                    <li>الدرس الثالث: العوامل الفيزيائية.</li>
+                    <li>الدرس الرابع: العوامل البيولوجية.</li>
+                    <li>الدرس الخامس: مراجعة.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <h2 class="study-title">الفصل الثاني: الغلاف الجوي</h2>
+            <img src="image2.jpg" alt="الغلاف الجوي" class="image-thumbnail"> <!-- صورة الفصل -->
+            <span class="triangle" onclick="toggleDetails('atmosphere-details')"></span>
+            <a href="chapter2.html" class="study-button">أبدا التحدي</a>
+            <div id="atmosphere-details" class="details">
+                <p class="study-description">تفاصيل الفصل:</p>
+                <ul>
+                    <li>الدرس الأول: مقدمة.</li>
+                    <li>الدرس الثاني: -----</li>
+                    <li>الدرس الثالث: -----</li>
+                    <li>الدرس الرابع: مراجعة.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <h2 class="study-title">الفصل الثالث: التربة</h2>
+            <img src="image3.jpg" alt="التربة" class="image-thumbnail"> <!-- صورة الفصل -->
+            <span class="triangle" onclick="toggleDetails('soil-details')"></span>
+            <a href="chapter3.html" class="study-button">أبدا التحدي</a>
+            <div id="soil-details" class="details">
+                <p class="study-description">تفاصيل الفصل:</p>
+                <ul>
+                    <li>الدرس الأول: مقدمة.</li>
+                    <li>الدرس الثاني: -----</li>
+                    <li>الدرس الثالث: -----</li>
+                    <li>الدرس الرابع: مراجعة.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <h2 class="study-title">الفصل الرابع: دور العلم في استدامة البيئة</h2>
+            <img src="image4.jpg" alt="استدامة البيئة" class="image-thumbnail"> <!-- صورة الفصل -->
+            <span class="triangle" onclick="toggleDetails('science-details')"></span>
+            <a href="chapter4.html" class="study-button">أبدا التحدي</a>
+            <div id="science-details" class="details">
+                <p class="study-description">تفاصيل الفصل:</p>
+                <ul>
+                    <li>الدرس الأول: مقدمة.</li>
+                    <li>الدرس الثاني: -----</li>
+                    <li>الدرس الثالث: -----</li>
+                    <li>الدرس الرابع: مراجعة.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+ <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/yourpage" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://yourchannel" target="_blank">
+                <img src="telegram-icon.png" alt="Telegram" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.wattpad.com/user/yourprofile" target="_blank">
+                <img src="wattpad-icon.png" alt="Wattpad" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-links">
+            <div class="footer-links-left">
+                <a href="FAQ.html">الأسئلة الشائعة (FAQ)</a>
+                <a href="contact.html">اتصل بنا</a>
+            </div>
+            <div class="footer-links-right">
+                <a href="privacy-policy.html">سياسة الخصوصية</a>
+                <a href="pay.html">خطة الاشتراك</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+ 
+ <script>
+        function toggleMenu() {
+            const hamburgerNav = document.querySelector('.hamburger-nav');
+            hamburgerNav.classList.toggle('active');
+        }
+    </script>
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                details.style.animation = "fadeIn 0.5s"; // إضافة تأثير الدخول
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

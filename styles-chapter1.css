@@ -1,0 +1,278 @@
+/* styles-chapter1.css */
+
+/* إعدادات أساسية */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    direction: rtl; /* الكتابة من اليمين لليسار */
+}
+
+/* فصل الدرس */
+.chapter {
+    background: #2c2c2c; /* لون الخلفية للصورة */
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* تأثير تغيير الخلفية */
+}
+
+.chapter:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    background-color: #3a3a3a; /* لون الخلفية عند التمرير */
+}
+
+/* عنوان الصفحة الرئيسي */
+.main-title {
+    font-size: 1.5em;
+    color: #ffcc00; /* لون النص أصفر */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: bounce 0.5s; /* تأثير ارتداد */
+}
+
+/* عنوان الدرس */
+.lesson-title {
+    font-size: 1em;
+    color: #ffcc00; /* لون النص أصفر */
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.lesson-title:hover {
+    color: #003f66;
+}
+
+/* وصف الدرس */
+.lesson-description {
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* مثلث التفاصيل */
+.triangle {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px; /* تغيير إلى margin-left لجعلها مناسبة للكتابة من اليمين لليسار */
+    margin-right: 0; /* إزالة الهوامش من اليمين */
+    color: #ffcc00; /* لون مثلث التفاصيل */
+    transition: transform 0.3s;
+}
+
+.triangle:hover {
+    transform: rotate(90deg);
+}
+
+/* تفاصيل الدرس */
+.details {
+    display: none;
+    margin-top: 10px;
+}
+
+/* قائمة العناوين الفرعية */
+.subtitles {
+    list-style: none;
+    padding: 0;
+}
+
+.subtitles li {
+    padding: 5px 0;
+    transition: background-color 0.3s;
+    color: #cccccc; /* نص رمادي فاتح */
+}
+
+.subtitles li:hover {
+    background-color: #e6f7ff;
+}
+
+/* حاوية الوسائط */
+.media-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* صندوق الوسائط */
+.media-box {
+    flex: 1;
+    margin: 0 10px;
+    background: #4CAF50; /* لون صندوق الوسائط */
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.media-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* مكان الوسائط */
+.media-placeholder {
+    background: black;   /*b2ebf2*/
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.media-placeholder:hover {
+    background: #80deea;
+}
+
+/* زر فتح المحتوى */
+.unlock-btn {
+    display: inline-block; /* لجعل الرابط يظهر كزر */
+    background-color: #4CAF50; /* لون الزر */
+    color: #ffffff; /* نص أبيض */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* إضافة تأثير الظل */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* لإزالة الخط السفلي من الرابط */
+}
+
+.unlock-btn:hover {
+    background-color: #45a049; /* لون الزر عند التمرير */
+    transform: translateY(-3px); /* تأثير رفع الزر */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* تأثير ظل أكبر */
+}
+
+/* حاوية PDF */
+.pdf-container {
+    margin-top: 10px;
+}
+
+.pdf-container a {
+    color: red; /* ffcc00لون النص أصفر */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.pdf-container a:hover {
+    color: #005f99; /* لون الروابط عند التمرير */
+}
+
+/* خطوط السطر */
+hr {
+    margin: 40px 0;
+    border: 1px solid #007acc;
+}
+
+/* تأثيرات الحركة */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.lesson {
+    animation: fadeIn 0.5s ease-in-out;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #121212;
+    margin: 45% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 10px;
+    position: relative; /*  نضيف هذه الخاصية لتحديد المواقع النسبية للأبناء */
+}
+.close {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 1px;
+    right: 1px; /* نضبط المسافة من اليمين لضبط الموضع */
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+        #videoContainer {
+            display: none;
+            margin-top: 20px;
+            position: relative;
+        }
+        #videoFrame {
+            width: 100%;
+            height: 315px;
+            border: none;
+        }
+        button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        
+        
+        
+        
+   

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطة الاشتراك</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-pay.css">
+</head>
+<body>
+    <!-- Header Section -->
+      <header>
+        <div class="header-container">
+            <!-- شعار دائري واسم المنظمة -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.jpg" alt="ElFar Logo" class="logo-img">
+                </a>
+                <div class="logo-text">منصة الفار</div>
+            </div>
+
+            <!-- قائمة التنقل الرئيسية -->
+            <nav class="main-nav">
+                <ul class="navbar">
+                    <li><a href="challenges.html" class="nav-button">التحديات</a></li>
+                    <li><a href="students.html" class="nav-button">المتفوقين</a></li>
+                </ul>
+            </nav>
+            
+            <!-- أيقونة قائمة الهامبرغر -->
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- قائمة الهامبرغر المخفية -->
+            <nav class="hamburger-nav">
+                <ul class="hamburger-navbar">
+                    <li><a href="about-mnsa.html">عن المنصة</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                    <li><a href="pay.html">خطة الاشتراك</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+            
+        <section class="subscription-steps">
+            <h2>خطوات الاشتراك</h2>
+            <ol>
+                <li>اضغط على زر "اشترك الآن" واملئ البيانات الخاصة.</li>
+                <li>التحويل على خط اتصالات أو فودافون كاش.</li>
+                <li>التواصل مع السكرتارية على التليجرام على رقم ...</li>
+                <li>أرسل اسمك كامل ورقم التحويل للحصول على أكواد الدروس والدخول في الجروب الخاص بالمادة.</li>
+            </ol>
+        </section>
+
+        <section class="plans">
+            <div class="plan">
+                <h2>الاشتراك بالحصّة</h2>
+                <p>يتضمن حصة تعليمية واحدة.</p>
+                <ul>
+                    <li>فيديو شرح مفصل</li>
+                    <li>فيديو للأسئلة</li>
+                </ul>
+                <p class="price">35 جنيهاً</p>
+                <button onclick="location.href='subscription1.html'">اشترك الآن</button>
+            </div>
+
+            <div class="plan">
+                <h2>الاشتراك الشهري</h2>
+                <p>يشمل 4 حصص خلال الشهر.</p>
+                <ul>
+                    <li>فيديوهات شرح لكل حصة</li>
+                    <li>حصة مراجعة على الفصل</li>
+                    <li>تحديات لتعزيز الفهم</li>
+                </ul>
+                <p class="price">120 جنيهاً</p>
+                <button onclick="location.href='subscription2.html'">اشترك الآن</button>
+            </div>
+
+            <div class="plan">
+                <h2>الاشتراك الكامل</h2>
+                <p>يشمل جميع محتويات الفصل الدراسي الأول.</p>
+                <ul>
+                    <li>فيديوهات شرح لجميع الدروس</li>
+                    <li>مذكرات شرح وملفات أسئلة</li>
+                    <li>مراجعة شاملة على كل فصل</li>
+                    <li>تحديات لتعزيز المعرفة</li>
+                </ul>
+                <p class="price">490 جنيهاً</p>
+                <button onclick="location.href='subscription3.html'">اشترك الآن</button>
+            </div>
+        </section>
+        
+            <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/groups/1779277456144898/?ref=share&mibextid=NSMWBT" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://t.me/Dr1Mousa" target="_blank">
+                <img src="telegram-icon.png" alt="Telegram" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.wattpad.com/user/yourprofile" target="_blank">
+                <img src="wattpad-icon.png" alt="Wattpad" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-links">
+            <div class="footer-links-left">
+                <a href="FAQ.html">الأسئلة الشائعة (FAQ)</a>
+                <a href="contact.html">اتصل بنا</a>
+            </div>
+            <div class="footer-links-right">
+                <a href="privacy-policy.html">سياسة الخصوصية</a>
+                <a href="pay.html">خطة الاشتراك</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+ 
+ <script>
+        function toggleMenu() {
+            const hamburgerNav = document.querySelector('.hamburger-nav');
+            hamburgerNav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
+
+
+

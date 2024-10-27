@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن المنصة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-contact.css">
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+      <header>
+        <div class="header-container">
+            <!-- شعار دائري واسم المنظمة -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.jpg" alt="ElFar Logo" class="logo-img">
+                </a>
+                <div class="logo-text">منصة الفار</div>
+            </div>
+
+            <!-- قائمة التنقل الرئيسية -->
+            <nav class="main-nav">
+                <ul class="navbar">
+                    <li><a href="challenges.html" class="nav-button">التحديات</a></li>
+                    <li><a href="students.html" class="nav-button">المتفوقين</a></li>
+                </ul>
+            </nav>
+            
+            <!-- أيقونة قائمة الهامبرغر -->
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- قائمة الهامبرغر المخفية -->
+            <nav class="hamburger-nav">
+                <ul class="hamburger-navbar">
+                    <li><a href="about-mnsa.html">عن المنصة</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                    <li><a href="pay.html">خطة الاشتراك</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        
+    <main class="container">
+          <section class="chapter online">
+    <h3 class="lesson-title">قسم الأونلاين</h3>
+
+    <div class="info-section">
+        <div class="card">
+        <h4>1. أرقام المدرس</h4>
+        <p>01126121595</p>
+        <p>01018924033</p>
+    </div>
+    
+    <div class="info-section">
+           <div class="card">
+        <h4>2. صفحات المدرس</h4>
+        <p><a class="study-button" href="#">تليجرام</a></p>
+        <p><a class="unlock-btn" href="#">واتساب</a></a></p>
+    </div>
+    
+    <div class="info-section">
+           <div class="card">
+        <h4>3. جروبات السوشيال الخاصة بالمدرس</h4>
+        <p><a class="study-button" href="#">جروب تليجرام</a></p>
+        <p><a class="unlock-btn" href="#">جروب فيسبوك</a></p>
+    </div>
+    
+    <div class="info-section">
+           <div class="card">
+        <h4>4. ملف الشخصي بالمدرس</h4>
+        <p><a class="study-button" href="#">هذا الرابط</a></p>
+    </div>
+    
+    <div class="info-section">
+           <div class="card">
+        <h4>5. مراسلة عبر البريد الإلكتروني</h4>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="الاسم" required>
+            <input type="text" id="phone" placeholder="رقم الهاتف" required>
+            <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+            <textarea id="message" rows="4" placeholder="رسالتك" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+</section>
+
+        <section class="chapter offline">
+            <h3 class="lesson-title">قسم الأوفلاين</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>المركز</th>
+                        <th>الأيام</th>
+                        <th>المواعيد</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>سنتر الفيروز</td>
+                        <td>الأحد - الثلاثاء</td>
+                        <td>4:00 - 6:00 م</td>
+                    </tr>
+                    <tr>
+                        <td>أكاديمية فاروس</td>
+                        <td>الأربعاء - الخميس</td>
+                        <td>5:00 - 7:00 م</td>
+                    </tr>
+                    <tr>
+                        <td>معهد الجزار</td>
+                        <td>السبت</td>
+                        <td>10:00 - 12:00 م</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="chapter location">
+            <h3 class="lesson-title">المكان</h3>
+            <p>سنتر الفيروز، العجمي، الاسكندرية</p>
+            <div class="map-container">
+                <iframe 
+                    src=""
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+    
+        <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/yourpage" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://yourchannel" target="_blank">
+                <img src="telegram-icon.png" alt="Telegram" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.wattpad.com/user/yourprofile" target="_blank">
+                <img src="wattpad-icon.png" alt="Wattpad" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-links">
+            <div class="footer-links-left">
+                <a href="FAQ.html">الأسئلة الشائعة (FAQ)</a>
+                <a href="contact">اتصل بنا</a>
+            </div>
+            <div class="footer-links-right">
+                <a href="privacy-policy.html">سياسة الخصوصية</a>
+                <a href="pay.html">خطة الاشتراك</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+ 
+ <script>
+        function toggleMenu() {
+            const hamburgerNav = document.querySelector('.hamburger-nav');
+            hamburgerNav.classList.toggle('active');
+        }
+    
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const userName = document.getElementById('name').value;
+    const userPhone = document.getElementById('phone').value;
+    const userEmail = document.getElementById('email').value;
+    const userMessage = document.getElementById('message').value;
+
+    const mailtoLink = `mailto:phy.mousa@gmail.com?subject=رسالة من ${encodeURIComponent(userName)}&body=رقم الهاتف: ${encodeURIComponent(userPhone)}%0Aالبريد الإلكتروني: ${encodeURIComponent(userEmail)}%0A%0A الرسالة: ${encodeURIComponent(userMessage)}`;
+
+    window.location.href = mailtoLink;
+});
+
+    </script>
+</body>
+</html>
+
+
+

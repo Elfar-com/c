@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="stylesf.css">
+    <title>الأسئلة الشائعة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            color: orange;
+            margin: 0;
+            padding: 20px;
+            background-color: black;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        .search-box {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .search-box input {
+            padding: 10px;
+            width: 80%;
+            max-width: 600px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .faq {
+            margin-top: 20px;
+        }
+        .faq-item {
+            background: black;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            transition: background 0.3s;
+        }
+        .faq-item:hover {
+            background: black;
+        }
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+            margin: 0;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>الأسئلة الشائعة</h1>
+    
+    <div class="search-box">
+        <input type="text" id="search" placeholder="ادخل استفسارك...">
+    </div>
+
+    <div class="faq" id="faq-container">
+        <div class="faq-item">
+            <p class="faq-question">1. كيف يمكنني التسجيل في منصة الفار التعليمية؟</p>
+            <p class="faq-answer">يمكنك التسجيل من خلال صفحة "تسجيل البيانات" وإدخال البيانات المطلوبة مثل الاسم، البريد الإلكتروني، ورقم الهاتف.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">2. كيف يمكنني الاشتراك ؟</p>
+            <p class="faq-answer">بعد التسجيل، يمكنك الذهاب إلى خطة الاشتراك واختيار الاشتراك المناسب لك: اشتراك شهري، اشتراك كامل.</p>
+          </div>
+        <div class="faq-item">
+            <p class="faq-question">3. ماذا تشمل المنصة من محتوى دراسي؟</p>
+            <p class="faq-answer">تقدم المنصة شرحًا وافيًا لمنهج العلوم المتكاملة عبر فيديوهات الشرح، فيديوهات الاسئلة، مذكرات الشرح، أسئلة لكل درس، ومراجعات لكل فصل، وتحديات للطلاب المشتركين.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">4. كيف يمكنني الدفع للاشتراك؟</p>
+            <p class="faq-answer">يمكنك الدفع عبر فودافون كاش أو اتصالات كاش. ستتلقى التعليمات بعد اختيار خطة الاشتراك.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">5. هل يوجد محتوى مجاني على المنصة؟</p>
+            <p class="faq-answer">نعم، توفر المنصة محتوى مذكرات الشرح وملفات الاسئلة بشكل مجاني، ايضا بشكل خاص جميع محتويات المنصة مجانا لطلاب غزة، حيث يمكنك الاستفادة من الدروس دون أي رسوم.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">6. هل يمكنني الوصول إلى المحتوى بعد انتهاء الاشتراك؟</p>
+            <p class="faq-answer">بعد انتهاء الاشتراك، لن تتمكن من الوصول إلى المحتوى. يجب تجديد الاشتراك للوصول مرة أخرى.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">7. هل الدروس مسجلة ويمكنني مشاهدتها في اي وقت؟</p>
+            <p class="faq-answer">نعم، يمكنك الوصول لفيديوهات الشرح والاسئلة في اي وقت تشاء حتى انتهاء العام الدراسي.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">8. هل يمكنني التواصل مع المعلم؟</p>
+            <p class="faq-answer">نعم، يمكنك التواصل مع المعلم عبر وسائل التواصل والجروبات من خلال وسائل التواصل المختلفه الموجوده عل المنصة .</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">9. هل يمكنني تغيير خطة الاشتراك بعد التسجيل؟</p>
+            <p class="faq-answer">نعم، يمكنك تغيير خطة الاشتراك بعد التواصل مع السكرتارية او المستر.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">10. هل المنصة تدعم الهواتف المحمولة؟</p>
+            <p class="faq-answer">نعم، المنصة متوافقة مع الهواتف المحمولة ويمكنك الوصول إليها من أي جهاز متصل بالإنترنت.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">11. كيف يمكنني تحميل مذكرات الشرح؟</p>
+            <p class="faq-answer">يمكنك تحميل مذكرات الشرح من الزر اسفل فيديو الشرح وايضا تابع جروبات الخاصه للوصول الي كل جديد ..</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">12. هل يوجد دعم فني في حال حدوث مشكلة؟</p>
+            <p class="faq-answer">نعم، يمكنك التواصل مع فريق الدعم الفني عبر البريد الإلكتروني أو من خلال خدمة الدردشة المباشرة.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">13. هل يمكنني استرداد الأموال إذا لم أكن راضيًا عن الخدمة؟</p>
+            <p class="faq-answer">نعم، يمكنك طلب استرداد الأموال خلال 14 يومًا من تاريخ الاشتراك إذا لم تكن راضيًا.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">14. ما هي مدة الاشتراك في الدورات؟</p>
+            <p class="faq-answer">مدة الاشتراك تختلف حسب الخطة المختارة، يمكن أن تكون شهرية أو سنوية.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">15. ما هو قسم التحديات؟</p>
+            <p class="faq-answer"> هو قسم خاص بالطلاب المشتركين يحتوي القسم علي تحديات مختلفه لرفع من كفاءه الطالب في جو مفعم بالحماس والتحدي.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">16. هل هناك امتحانات تقييمية؟</p>
+            <p class="faq-answer">نعم، تتضمن المنصة امتحانات تقييمية بعد انتهاء كل درس وفصل  لتقييم مستوى الطلاب.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">17. هل يمكنني استخدام المنصة من خارج البلاد؟</p>
+            <p class="faq-answer">نعم، يمكنك استخدام المنصة من أي مكان في العالم، لكن تأكد من توفر اتصال جيد بالإنترنت.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">18. هل يوجد محتوى تفاعلي؟</p>
+            <p class="faq-answer">نعم، تحتوي الدورات على محتوى تفاعلي مثل الاختبارات التفاعلية ومناقشات جماعية.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">19. هل يمكنني الوصول إلى محتوى الدروس المسجلة؟</p>
+            <p class="faq-answer">نعم، يمكنك الوصول إلى محتوى الدروس المسجلة في أي وقت بعد التسجيل.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">20. هل توجد تطبيقات للهواتف الذكية؟</p>
+            <p class="faq-answer">لا، لكنها من الخطط المستقبلية.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">21. هل يمكنني معرفة تقدمي في الدروس؟</p>
+            <p class="faq-answer">نعم، يمكنك متابعة تقدمك في الدروس والامتحانات من خلال المدرس.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">22. ماذا أفعل إذا واجهت مشكلة تقنية؟</p>
+            <p class="faq-answer">يمكنك التواصل مع الدعم الفني او المستر لحل أي مشاكل تقنية تواجهك.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">23. هل يمكنني مشاركة حسابي مع آخرين؟</p>
+            <p class="faq-answer">لا، يجب أن يكون لكل مستخدم حسابه الخاص.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">24. هل المنصة توفر محتوى إضافي للطلاب؟</p>
+            <p class="faq-answer">قريبا، سوف توفر المنصة محتوى إضافي مثل مقاطع الفيديو التوضيحية والاختبارات العملية.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">25. كيف أستطيع إلغاء اشتراكي؟</p>
+            <p class="faq-answer">يمكنك إلغاء اشتراكك عن طريق التواصل مع السكرتاريه او المستر، وسيتم إيقاف التجديد التلقائي.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">26. هل توجد مسابقات أو فعاليات تعليمية؟</p>
+            <p class="faq-answer">نعم، تنظم المنصة مسابقات وفعاليات تعليمية لتحفيز الطلاب.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">27. كيف أستطيع التواصل مع إدارة المنصة؟</p>
+            <p class="faq-answer">يمكنك التواصل مع إدارة المنصة عبر البريد الإلكتروني أو نموذج الاتصال المتاح على الموقع.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">28. هل يمكنني التواصل مع الطلاب والمدرس بشكل مباشر؟</p>
+            <p class="faq-answer">نعم، يمكنك التواصل مع زملائك والمدرس الخاص في الجروبات الخاصة بالمادة للدراسة معًا.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">29. هل المنصة تقدم العلوم المتكاملة بشكل متخصص؟</p>
+            <p class="faq-answer">نعم،نقدم منهج العلوم المتكاملة بشكل متخصص، يمكنك الاطلاع على السيرة الذاتية للمدرس في صفحة "تواصل معنا".</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">30. هل يمكنني مشاهدة الدروس في أي وقت؟</p>
+            <p class="faq-answer">نعم، يمكنك مشاهدة الدروس في أي وقت يناسبك بعد الاشتراك وتسجيل البيانات.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">31. كيف أستطيع الحصول على الملاحظات من المعلمين؟</p>
+            <p class="faq-answer">يمكنك طلب الملاحظات من المعلمين عبر وسائل التواصل الخاصة أو من خلال ملف الاسئلة في المنصة.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">32. هل يمكنني استخدام المنصة لعدة مواد دراسية؟</p>
+            <p class="faq-answer">حاليًا، المنصة تركز على منهج العلوم المتكاملة فقط.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">33. كيف يمكنني تقييم الدورات؟</p>
+            <p class="faq-answer">يمكنك تقييم الدورات بعد الانتهاء منها عبر نظام التقييم في حسابك.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">34. هل هناك دورات تحضيرية للاختبارات؟</p>
+            <p class="faq-answer">نعم، هناك دورات تحضيرية للاختبارات النهائية في قسم "التحديات" تساعدك في التحضير بشكل جيد.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">35. كيف يمكنني تحديث معلومات حسابي؟</p>
+            <p class="faq-answer">يمكنك تحديث معلومات حسابك من خلال السكرتارية الخاصه او المدرس.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('search').addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question').textContent.toLowerCase();
+                const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+
+                if (question.includes(query) || answer.includes(query)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

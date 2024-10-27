@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة الفار التعليمية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+      <header>
+        <div class="header-container">
+            <!-- شعار دائري واسم المنظمة -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.jpg" alt="ElFar Logo" class="logo-img">
+                </a>
+                <div class="logo-text">منصة الفار</div>
+            </div>
+
+            <!-- قائمة التنقل الرئيسية -->
+            <nav class="main-nav">
+                <ul class="navbar">
+                    <li><a href="challenges.html" class="nav-button">التحديات</a></li>
+                    <li><a href="students.html" class="nav-button">المتفوقين</a></li>
+                </ul>
+            </nav>
+            
+            <!-- أيقونة قائمة الهامبرغر -->
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- قائمة الهامبرغر المخفية -->
+            <nav class="hamburger-nav">
+                <ul class="hamburger-navbar">
+                    <li><a href="about-mnsa.html">عن المنصة</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                    <li><a href="pay.html">خطة الاشتراك</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<div class="form-container">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeF7ahfmM5zKoGwkKfe3UwnhhZBaAWg0hBqZ4tKUVnL_vcrOQ/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">جارٍ التحميل…</iframe>
+</div>
+
+    <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/yourpage" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://yourchannel" target="_blank">
+                <img src="telegram-icon.png" alt="Telegram" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.wattpad.com/user/yourprofile" target="_blank">
+                <img src="wattpad-icon.png" alt="Wattpad" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-links">
+            <div class="footer-links-left">
+                <a href="FAQ.html">الأسئلة الشائعة (FAQ)</a>
+                <a href="contact.html">اتصل بنا</a>
+            </div>
+            <div class="footer-links-right">
+                <a href="privacy-policy.html">سياسة الخصوصية</a>
+                <a href="pay.html">خطة الاشتراك</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+ 
+ <script>
+        function toggleMenu() {
+            const hamburgerNav = document.querySelector('.hamburger-nav');
+            hamburgerNav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+

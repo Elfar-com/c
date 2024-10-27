@@ -1,0 +1,127 @@
+/*General Styles */
+
+
+/* Containerpay */
+.containerpay {
+    text-align: rtl;
+    width: 90%; /* جعل العرض 90% للتناسب مع الهواتف */
+    max-width: 1200px; /* أقصى عرض للسطح */
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ffcc00; /* لون النص الأصفر */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    text-align: rtl;
+    color: #ffcc00; /* لون النص الأصفر */
+}
+/* Subscription Steps */
+.subscription-steps {
+    float: rtl;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 120px;
+}
+.subscription-steps h2 {
+    text-align: center; /* محاذاة النص إلى اليمين */
+    margin: 0; /* إزالة الهامش الافتراضي */
+}
+
+.subscription-steps ol {
+    direction: rtl;
+    text-align: rtl;
+    padding-left: 20px;
+}
+
+.subscription-steps li {
+    margin: 10px 0;
+    direction: rtl;
+    color: #cccccc; /* نص رمادي فاتح */
+}
+
+/* Plans Section */
+.plans {
+    direction: rtl;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Plan Card */
+.plan {
+    background-color: #2c2c2c; /* لون الخلفية */
+    border-radius: 20px;
+    padding: 20px;
+    margin: 5px;
+    flex: 1 1 300px; /* السماح للبطاقات بالتقلص أو التمدد */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center; /* توسيط النص */
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Price Styling */
+.price {
+    font-size: 1.5em;
+    color: #ffd700; /* نص ذهبي */
+    margin: 15px 0;
+}
+
+/* Button Styles */
+button {
+    background-color: #6200ea; /* لون زر */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* جعل الزر يتناسب مع عرض البطاقة */
+}
+
+button:hover {
+    background-color: #3700b3; /* لون عند التحويم */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #cccccc; /* نص رمادي فاتح */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .plans {
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي في الشاشات الصغيرة */
+        align-items: center;
+    }
+
+    .plan {
+        width: 90%; /* جعل عرض البطاقة 90% للشاشات الصغيرة */
+    }
+
+    header {
+        margin-bottom: 10px; /* تقليل الهوامش في الشاشات الصغيرة */
+    }
+}
+
+

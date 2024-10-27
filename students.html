@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفصل الدراسي الأول</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-students.css">
+</head>
+</head>
+<body>
+    <!-- Header Section -->
+      <header>
+        <div class="header-container">
+            <!-- شعار دائري واسم المنظمة -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.jpg" alt="ElFar Logo" class="logo-img">
+                </a>
+                <div class="logo-text">منصة الفار</div>
+            </div>
+
+            <!-- قائمة التنقل الرئيسية -->
+            <nav class="main-nav">
+                <ul class="navbar">
+                    <li><a href="challenges.html" class="nav-button">التحديات</a></li>
+                    <li><a href="students.html" class="nav-button">المتفوقين</a></li>
+                </ul>
+            </nav>
+            
+            <!-- أيقونة قائمة الهامبرغر -->
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- قائمة الهامبرغر المخفية -->
+            <nav class="hamburger-nav">
+                <ul class="hamburger-navbar">
+                    <li><a href="about-mnsa.html">عن المنصة</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                    <li><a href="pay.html">خطة الاشتراك</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<hr>
+
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide"><img src="slide1.jpg" alt="صورة 1"></div>
+        <div class="slide"><img src="slide2.jpg" alt="صورة 2"></div>
+        <div class="slide"><img src="slide3.jpg" alt="صورة 3"></div>
+    </div>
+    <div class="nav">
+        <span class="prev" onclick="showPrevSlide()">&#10094;</span>
+        <span class="next" onclick="showNextSlide()">&#10095;</span>
+    </div>
+</div>
+
+        <!-- Team Description -->
+        <div class="team-description">
+            <h2>النخبة</h2>
+            <p>من أفضل طلاب المنصة وأكثرهم تفوقاً وعلماً وستظل ذكراهم محفزا لكل الطلاب</p>
+        </div>
+        
+        <!-- Team Members -->
+        <div class="team-members">
+            <h2>طلاب النخبة</h2>
+            <div class="member-list">
+                <div class="member-card">
+                    <img src="member1.jpg" alt="Member 1" class="member-img">
+                    <h3 class="member-name">جنى صالح</h3>
+                    <p class="member-role">الأسكندرية</p>
+                </div>
+                <div class="member-card">
+                    <img src="member2.jpg" alt="Member 2" class="member-img">
+                    <h3 class="member-name">سارة محمد</h3>
+                    <p class="member-role">القاهرة</p>
+                </div>
+                <div class="member-card">
+                    <img src="member3.jpg" alt="Member 3" class="member-img">
+                    <h3 class="member-name">فاطمة محمد</h3>
+                    <p class="member-role">القليوبية</p>
+                </div>
+                <div class="member-card">
+                    <img src="member4.jpg" alt="Member 4" class="member-img">
+                    <h3 class="member-name">فاطمة أحمد</h3>
+                    <p class="member-role">قنا</p>
+                </div>
+                <div class="member-card">
+                    <img src="member5.jpg" alt="Member 5" class="member-img">
+                    <h3 class="member-name">رودينا احمد</h3>
+                    <p class="member-role">مطروح</p>
+                </div>
+                <div class="member-card">
+                    <img src="member6.jpg" alt="Member 6" class="member-img">
+                    <h3 class="member-name">نجلاء محمد</h3>
+                    <p class="member-role">سوهاج</p>
+                </div>
+                <div class="member-card">
+                    <img src="member7.jpg" alt="Member 7" class="member-img">
+                    <h3 class="member-name">رشا خالد</h3>
+                    <p class="member-role">اسوان</p>
+                </div>
+                <div class="member-card">
+                    <img src="member8.jpg" alt="Member 8" class="member-img">
+                    <h3 class="member-name">منال يوسف</h3>
+                    <p class="member-role">الشرقية</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+ <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/yourpage" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://yourchannel" target="_blank">
+                <img src="telegram-icon.png" alt="Telegram" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.wattpad.com/user/yourprofile" target="_blank">
+                <img src="wattpad-icon.png" alt="Wattpad" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-links">
+            <div class="footer-links-left">
+                <a href="FAQ.html">الأسئلة الشائعة (FAQ)</a>
+                <a href="contact.html">اتصل بنا</a>
+            </div>
+            <div class="footer-links-right">
+                <a href="privacy-policy.html">سياسة الخصوصية</a>
+                <a href="pay.html">خطة الاشتراك</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+ 
+ <script>
+        function toggleMenu() {
+            const hamburgerNav = document.querySelector('.hamburger-nav');
+            hamburgerNav.classList.toggle('active');
+        }
+    </script>
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                details.style.animation = "fadeIn 0.5s"; // إضافة تأثير الدخول
+            } else {
+                details.style.display = "none";
+            }
+        }
+        const slides = document.querySelector('.slides');
+const slide = document.querySelectorAll('.slide');
+
+let currentIndex = 0;
+
+function showNextSlide() {
+    currentIndex = (currentIndex + 1) % slide.length;
+    updateSlidePosition();
+}
+
+function showPrevSlide() {
+    currentIndex = (currentIndex - 1 + slide.length) % slide.length;
+    updateSlidePosition();
+}
+
+function updateSlidePosition() {
+    const offset = -currentIndex * 100; // عرض الشريحة
+    slides.style.transform = `translateX(${offset}%)`;
+}
+
+// تغيير الشريحة تلقائياً كل ثانيتين
+setInterval(showNextSlide, 2000);
+    </script>
+
+</body>
+</html>

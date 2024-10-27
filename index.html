@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة الفار التعليمية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+      <header>
+        <div class="header-container">
+            <!-- شعار دائري واسم المنظمة -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.jpg" alt="ElFar Logo" class="logo-img">
+                </a>
+                <div class="logo-text">منصة الفار</div>
+            </div>
+
+            <!-- قائمة التنقل الرئيسية -->
+            <nav class="main-nav">
+                <ul class="navbar">
+                    <li><a href="challenges.html" class="nav-button">التحديات</a></li>
+                    <li><a href="students.html" class="nav-button">المتفوقين</a></li>
+                </ul>
+            </nav>
+            
+            <!-- أيقونة قائمة الهامبرغر -->
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- قائمة الهامبرغر المخفية -->
+            <nav class="hamburger-nav">
+                <ul class="hamburger-navbar">
+                    <li><a href="about-mnsa.html">عن المنصة</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                    <li><a href="pay.html">خطة الاشتراك</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">الفار في العلوم المتكاملة</h1>
+            <p class="hero-subtitle">الصف الأول الثانوي</p>
+            <div class="cta-buttons">
+    <a href="https://t.me/Dr1Mousa" class="cta-button">جروب التليجرام</a> <!-- رابط لجروب التليجرام -->
+    <a href="contact.html" class="cta-button">تواصل معنا</a> <!-- رابط لصفحة "تواصل معنا" -->
+</div>
+        </div>
+    </section>
+<section class="study-section">
+    <h2 class="section-title">العلوم المتكاملة</h2>
+    <p class="section-description">أختر الفصل الدراسي المناسب</p>
+    <div class="study-images">
+        <div class="study-image">
+            <img src="first-term.jpg" alt="الصف الأول الثانوي" class="image-thumbnail">
+            <h3 class="study-title">الصف الأول الثانوي</h3>
+            <p class="study-description">العلوم المتكاملة مع أ/د.موسى محمد</p>
+            <a href="first-term.html" class="study-button">الفصل الدراسي الأول</a> <!-- زر كزر رابط -->
+        </div>
+        <!-- يمكنك إضافة كاردات أخرى هنا -->
+    </div>
+</section>
+    <!-- 3D Effect Section -->
+    <section class="effect-section">
+        <div class="card-3d">
+            <div class="card-content">
+                <h2>التحديات</h2>
+                <p>تحديات واختبارات لقياس المستويات العليا</p>
+                <button class="dynamic-button">إذا قدها دوس</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Text Section -->
+    <section class="dynamic-text-section">
+        <div class="dynamic-box">
+            <h3>مستر موسى</h3>
+            <p>النجاح هو أن تشعر بالسعادة فيما تقوم به، ومع الفار هتبطل تحتار وتبقى من الشطار</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/groups/1779277456144898/?ref=share&mibextid=NSMWBT" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://t.me/Dr1Mousa" target="_blank">
+                <img src="telegram-icon.png" alt="Telegram" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/phy.mousa7" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.wattpad.com/user/yourprofile" target="_blank">
+                <img src="wattpad-icon.png" alt="Wattpad" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-links">
+            <div class="footer-links-left">
+                <a href="FAQ.html">الأسئلة الشائعة (FAQ)</a>
+                <a href="contact.html">اتصل بنا</a>
+            </div>
+            <div class="footer-links-right">
+                <a href="privacy-policy.html">سياسة الخصوصية</a>
+                <a href="pay.html">خطة الاشتراك</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+ 
+ <script>
+        function toggleMenu() {
+            const hamburgerNav = document.querySelector('.hamburger-nav');
+            hamburgerNav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

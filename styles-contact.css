@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1b1b1b; /* لون خلفية داكن */
+    color: #f0f0f0; /* لون نص فاتح */
+    margin: 0;
+    padding: 20px;
+     /* الاتجاه من اليمين لليسار */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-title {
+    font-size: 3em;
+    color: #61dafb; /* لون مميز */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.lesson-title {
+    font-size: 1.8em;
+    color: #82c91e; /* لون آخر مميز */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #61dafb; /* خط أسفل العنوان */
+    display: inline-block;
+}
+
+.container {
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center; /* محاذاة العناصر في المنتصف */
+}
+
+.chapter {
+    direction: rtl;
+    background: #2c2c2c; /* لون خلفية داكن للعناصر */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 90%; /* عرض مناسب */
+    transition: transform 0.3s;
+}
+
+.chapter:hover {
+    transform: scale(1.02); /* تأثير تكبير عند التحويم */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #444; /* لون حدود مختلف */
+}
+
+th {
+    background-color: #379683; /* لون رأس الجدول */
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+th:hover {
+    background-color: #2b7a6c; /* لون عند التحويم */
+}
+
+.location {
+    background-color: #3e3e3e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.map-container {
+    margin-top: 15px;
+    border: 2px solid #61dafb; /* إطار حول الخريطة */
+    border-radius: 10px;
+    overflow: hidden; /* جعل الزوايا مستديرة */
+}
+
+.map-container iframe {
+    transition: transform 0.3s;
+}
+
+.map-container:hover iframe {
+    transform: scale(1.05); /* تكبير الخريطة عند التحويم */
+}
+
+.online {
+    text-align: center;
+    background-color: #3e3e3e; /* لون خلفية القسم */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.online:hover {
+    transform: scale(1.02); /* تأثير تكبير عند التحويم */
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+.info-section h4 {
+    font-size: 1.5em;
+    direction: rtl;
+    color: orange; /* لون العناوين الفرعية */
+    margin-bottom: 10px;
+    border-bottom: 1px solid #61dafb; /* خط أسفل العنوان */
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.unlock-btn {
+    color: #fff;
+    background-color: orange; /* لون الأزرار */
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.unlock-btn:hover {
+    background-color: #82c91e; /* لون عند التحويم */
+    transform: translateY(-2px); /* حركة رفع بسيطة */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* تباعد بين المدخلات */
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #444; /* لون حدود المدخلات */
+    border-radius: 5px;
+    background-color: #3c3c3c; /* خلفية المدخلات */
+    color: #f4f4f4; /* لون النص */
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #61dafb; /* لون حدود المدخلات عند التركيز */
+}
+
+button {
+    padding: 10px;
+    margin: 20px;
+    background-color: #5d5c61; /* لون زر الإرسال */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #379683; /* لون زر الإرسال عند التحويم */
+    transform: translateY(-2px); /* حركة رفع بسيطة */
+}
+.card {
+    background: #2c2c2c;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: #3a3a3a; /* تغيير لون الخلفية عند التمرير */
+}
+
+.card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* إعدادات الفوتر */
+.footer {
+  background: #182848; /* لون الخلفية */
+  color: #fff; /* لون النص */
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* ترتيب العناصر عموديًا */
+  align-items: center; /* محاذاة العناصر في الوسط */
+}
+
+/* إعدادات الأيقونات */
+.social-media-icons {
+  display: flex;
+  justify-content: center; /* محاذاة الأيقونات في الوسط */
+  gap: 20px; /* المسافة بين الأيقونات */
+  margin-bottom: 20px; /* المسافة أسفل الأيقونات */
+}
+
+.social-media-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ضبط حجم أيقونات التواصل الاجتماعي */
+.social-media-icons img {
+  width: 100%;
+  height: auto;
+  max-width: 32px; /* العرض الأقصى للأيقونة */
+  max-height: 32px; /* الطول الأقصى للأيقونة */
+  object-fit: contain;
+  display: block;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+/* تأثيرات عند التمرير فوق الأيقونة */
+.social-media-icons a:hover img {
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.7); /* إطار مضيء */
+  transform: scale(1.1); /* تكبير الأيقونة قليلاً */
+}
+
+/* إعدادات الروابط */
+.footer-links {
+  display: flex;
+  justify-content: center; /* محاذاة الروابط في الوسط */
+  gap: 40px; /* المسافة بين الأعمدة */
+  flex-wrap: wrap; /* السماح بلف العناصر في الأسطر */
+}
+
+.footer-links-left,
+.footer-links-right {
+  display: flex;
+  flex-direction: column; /* ترتيب الروابط عموديًا */
+}
+
+.footer-links a {
+  display: block;
+  margin: 1px 0; /* المسافة بين الروابط */
+  padding: 10px 20px;
+  background: #333; /* خلفية الأزرار */
+  color: #fff; /* لون النص */
+  text-decoration: none;
+  border-radius: 5px; /* زوايا دائرية */
+  font-size: 10px;
+  transition: background 0.3s, transform 0.3s; /* تأثيرات ديناميكية */
+  text-align: center;
+}
+
+.footer-links a:hover {
+  background: #ff6600; /* لون خلفية الأزرار عند التمرير */
+  transform: scale(1.05); /* تكبير الأزرار قليلاً عند التمرير */
+}
+.footer-copy {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ddd;
+}
